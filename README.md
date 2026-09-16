@@ -30,11 +30,12 @@ zig build
 zig build test
 ```
 
-Requires Zig **0.16.x**, Linux. `zig-libsql` is a tag dependency (v0.2.1).
+Requires Zig **0.16.x**, Linux. `zig-libsql` is fetched from
+`https://sdks.chained.tools/libsql-zig/0.2.1/`.
 
 ## Consume
 
-**Product toolchains should depend on [pms-sdk](../pms-sdk)** and use
+**Product toolchains should depend on [pms-sdk](../pms)** and use
 `pms.auth` — not a direct `clerk_zig` dependency. See
 [`docs/CONSUMING.md`](docs/CONSUMING.md).
 

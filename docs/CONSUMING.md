@@ -1,6 +1,6 @@
 # Consuming clerk-zig
 
-> **Prefer [pms-sdk](../../pms-sdk)** for product toolchains.
+> **Prefer [pms-sdk](../../pms)** for product toolchains.
 > Products should depend on **`pms_sdk` only** and use `pms.auth` (this package
 > is the implementation detail behind that façade). Direct `clerk_zig` deps are
 > deprecated for rusty / worgo / hasky / … and will be removed from product
@@ -19,7 +19,7 @@ pms-sdk auth façade.
 
 ```zig
 // build.zig.zon — products
-.pms_sdk = .{ .path = "../pms-sdk" }, // or published tag later
+.pms_sdk = .{ .path = "../../sdks/pms" }, // workspace; pms-sdk is not hosted
 
 // application code
 const pms = @import("pms_sdk");
@@ -34,7 +34,7 @@ Full consumer guide for the suite: `pms-sdk/README.md` and
 ## Direct clerk-zig (library maintainers only)
 
 ```sh
-zig fetch --save https://github.com/solvedggorg/clerk-zig/archive/refs/tags/v0.1.1.tar.gz
+zig fetch --save https://sdks.chained.tools/clerk-zig/0.1.1/clerk-zig-0.1.1.tar.gz
 ```
 
 ```zig

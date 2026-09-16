@@ -4,9 +4,9 @@
     .fingerprint = 0xd8c443889ae04b73, // Changing this has security and trust implications.
     .minimum_zig_version = "0.16.0",
     .dependencies = .{
-        // master @ amalg-optimize (lastErrorMessage is error union; v0.2.1 is older).
         .zig_libsql = .{
-            .path = "zig-pkg/zig_libsql-0.2.1-sj_Iyw6NNwGSjbvQkfw3L-pBTHGHXeN__lcfBoosAxfv",
+            .url = "https://sdks.chained.tools/libsql-zig/0.2.1/libsql-zig-0.2.1.tar.gz",
+            .hash = "zig_libsql-0.2.1-sj_Iy_wWNwHVppOM4lDn_YMDscyXY4AqLxgsIh7h6Sq7",
         },
     },
     .paths = .{
